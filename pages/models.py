@@ -44,7 +44,7 @@ class Article(models.Model):
   author = models.ForeignKey(Author, on_delete=models.CASCADE)
   released_date =models.DateField()
   category = models.CharField(max_length=20, choices=list_of_field)
-  topic =  models.CharField(max_length=50)
+  topic =  models.CharField(max_length=1000)
   body = models.TextField()
 
   def __str__(self) -> str:
